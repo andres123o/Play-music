@@ -1,0 +1,463 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #f6eaea, #f7e9ea, #f7e8eb, #f8e8ec, #f8e7ed);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav h2 {
+  font-size: 25px;
+  margin-top: 10px;
+  font-weight: 700;
+  color: red;
+}
+
+.usuario {
+  width: 100%;
+  max-height: 52px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.usuario a {
+  margin: 10px;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #939394;
+  text-decoration: none;
+  border-bottom: 1px solid #5c5a5a;
+  padding: 5px;
+}
+
+.usuario a:focus {
+  margin: 10px;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #2c2a2a;
+  text-decoration: none;
+  border-bottom: 1px solid #2c2a2a;
+  padding: 5px;
+}
+
+.main-container {
+  display: grid;
+  grid-template: repeat(10, 1fr)/repeat(10, 1fr);
+  height: 85vh;
+}
+
+.buscador {
+  grid-column: 2 / 10;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buscador-container {
+  width: 50%;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 5px 5px 12px #cacaca, -8px -8px 15px #f6f6f6;
+}
+
+.buscador-container input {
+  height: 100%;
+  width: 85%;
+  font-family: sans-serif;
+  border: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 5px;
+}
+
+.buscador-container span {
+  width: 15%;
+  height: 100%;
+  background-image: url("https://img.icons8.com/android/24/000000/search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.buscador-container input:hover {
+  outline: none;
+}
+
+.buscador-container:hover {
+  box-shadow: 8px 8px 15px #cacaca, -8px -8px 15px #f6f6f6;
+}
+
+.buscador-container input:focus {
+  outline: none;
+}
+
+.buscador-container:focus {
+  box-shadow: 8px 8px 15px #cacaca, -8px -8px 15px #f6f6f6;
+}
+
+.titulo {
+  grid-column: 3 / 9;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.logo-img {
+  grid-column: 3 / 9;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  grid-column: 1 / 11;
+  grid-row: 5 / 11;
+  overflow: scroll;
+  padding: 20px;
+  position: relative;
+}
+
+.carrusel {
+  white-space: nowrap;
+  width: 100%;
+  height: 210px;
+  padding-bottom: 10px;
+}
+
+.carousel__item {
+  width: 200px;
+  height: 95%;
+  background-color: #79461a;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 0px 10px;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
+}
+
+.carousel__item:hover ~ .carousel__item {
+  transform: translate3d(30px, 0, 0);
+}
+
+.carrusel:hover .carousel__item {
+  opacity: 0.7;
+}
+
+.carrusel:hover .carousel__item:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.dakiti {
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rosalia-bad-bunny-la-noche-de-anoche-1-1613378121.jpg?resize=980:*");
+  background-image: no-repeat;
+  background-image: center;
+  background-size: cover;
+}
+
+.sech {
+  background-image: url("https://elgenero.com/images/subir/images/1597982489xqx.jpg");
+  background-image: no-repeat;
+  background-image: center;
+  background-size: cover;
+}
+
+.oasis {
+  background-image: url("https://images.coveralia.com/audio/j/Jhay_Cortez-No_Me_Conoce_(Featuring_J_Balvin_y_Bad_Bunny)_(Remix)_(CD_Single)-Frontal.jpg?989");
+  background-image: no-repeat;
+  background-image: center;
+  background-size: cover;
+}
+
+.pretendes {
+  background-image: url("https://images.coveralia.com/audio/b/Bad_Bunny-Vete_(Cd_Single)-Frontal.jpg?232");
+  background-image: no-repeat;
+  background-image: center;
+  background-size: cover;
+}
+
+.foda {
+  background-image: url("https://www.lahiguera.net/musicalia/artistas/varios/disco/0/tema/17875/amorfoda-portada.jpg");
+  background-image: no-repeat;
+  background-image: center;
+  background-size: cover;
+}
+
+.bien {
+  background-image: url("https://i0.wp.com/www.themusicalhype.com/wp-content/uploads/2018/07/bad-bunny-estamos-bien-rimas-music.jpg?w=500&ssl=1");
+  background-image: no-repeat;
+  background-image: center;
+  background-size: cover;
+}
+
+.carousel__item .play {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+
+.carousel__item .more {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+}
+
+.usuario-home {
+  width: 100%;
+  max-height: 52px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.usuario-home a {
+  margin-left: 40px;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #939394;
+  text-decoration: none;
+  border-bottom: 1px solid #5c5a5a;
+  padding: 5px;
+}
+
+.usuario-home a:focus {
+  margin: 40px;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #2c2a2a;
+  text-decoration: none;
+  border-bottom: 1px solid #2c2a2a;
+  padding: 5px;
+}
+
+.login {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login__container {
+  width: 400px;
+  height: 100%;
+  border-radius: 45px;
+  padding: 30px;
+  background-image: linear-gradient(to right, #f8f7f7, #f8f5f5, #f8f5f5, #f8f7f8, #f7f2f7);
+  box-shadow: 10px 10px 22px #bebebe;
+}
+
+.login__container h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: #9e2845;
+}
+
+.login__container--form {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign__container--form {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}
+
+.login__container--form .input {
+  border: none;
+  border-bottom: 1px solid #9e9898;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-image: linear-gradient(to right, #f8f7f7, #f8f5f5, #f8f5f5, #f8f7f8, #f7f2f7);
+}
+
+.login__container--form .input:hover {
+  outline: none;
+  font-family: "Roboto";
+  color: #4d4244;
+}
+
+.login__container--form .input:focus {
+  outline: none;
+  font-family: "Roboto";
+  color: #4d4244;
+}
+
+.login__container--form .button {
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+  color: #fffffe;
+  font-family: "Roboto";
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #eea9ee, #f7a7f1, #eba1e2, #f7b1ea, #eca8dd);
+}
+
+.login__container--form .button:focus {
+  outline: none;
+  background-image: linear-gradient(to right, #f093f0, #f898f0, #e785dc, #f596e3, #ec8dd8);
+}
+
+.sign__container--form .input {
+  border: none;
+  border-bottom: 1px solid #9e9898;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-image: linear-gradient(to right, #f8f7f7, #f8f5f5, #f8f5f5, #f8f7f8, #f7f2f7);
+}
+
+.sign__container--form .input:hover {
+  outline: none;
+  font-family: "Roboto";
+  color: #4d4244;
+}
+
+.sign__container--form .input:focus {
+  outline: none;
+  font-family: "Roboto";
+  color: #4d4244;
+}
+
+.sign__container--form .button {
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+  color: #fffffe;
+  font-family: "Roboto";
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #eea9ee, #f7a7f1, #eba1e2, #f7b1ea, #eca8dd);
+}
+
+.sign__container--form .button:focus {
+  outline: none;
+  background-image: linear-gradient(to right, #f093f0, #f898f0, #e785dc, #f596e3, #ec8dd8);
+}
+
+.login__container--remember-me {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-family: sans-serif;
+  color: #9e2845;
+}
+
+.login__container--remember-me label {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.login__container--remember-me label input {
+  margin-right: 8px;
+}
+
+.login__container--remember-me a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #9e2845;
+}
+
+.login__container--remember-me a:focus {
+  text-decoration: underline;
+}
+
+.login__container--social-media {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.login__container--social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+.login__container--social-media .social--media {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.social--media p {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  margin-left: 10px;
+  color: #a01531;
+}
+
+.footer {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 10px;
+  color: #88122a;
+  margin: 20px;
+}
+
+.footer a:focus {
+  text-decoration: underline;
+}
